@@ -1,0 +1,739 @@
+# Compile of bmp_read_test.sv was successful.
+vsim work.bmp_read_test -voptargs=+acc
+# vsim work.bmp_read_test -voptargs="+acc" 
+# Start time: 22:32:05 on Mar 26,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.bmp_read_test(fast)
+run -all
+# ** Warning: (vsim-7) Failed to open readmem file "pattern_image_05af.bmp" in read mode.
+# No such file or directory. (errno = ENOENT)    : C:/Users/7seve/Documents/11_FPGAproj/modelsim/bmp_read_250326/bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# Top-left pixel: xx
+# Bottom-right pixel: xx
+vlog ../bmp_read_test.sv
+# Questa Intel Starter FPGA Edition-64 vlog 2024.1 Compiler 2024.04 Apr 19 2024
+# Start time: 22:33:44 on Mar 26,2025
+# vlog -reportprogress 300 ../bmp_read_test.sv 
+# -- Compiling module bmp_read_test
+# 
+# Top level modules:
+# 	bmp_read_test
+# End time: 22:33:44 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.bmp_read_test(fast)
+run -all
+# ** Warning: (vsim-PLI-3409) Illegal binary digit 'B' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit 'M' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '6' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '6' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '(' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3409) Illegal binary digit '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# Top-left pixel: xx
+# Bottom-right pixel: xx
+vlog ../bmp_read_test.sv
+# Questa Intel Starter FPGA Edition-64 vlog 2024.1 Compiler 2024.04 Apr 19 2024
+# Start time: 22:34:50 on Mar 26,2025
+# vlog -reportprogress 300 ../bmp_read_test.sv 
+# -- Compiling module bmp_read_test
+# 
+# Top level modules:
+# 	bmp_read_test
+# End time: 22:34:50 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.bmp_read_test(fast)
+run -all
+# ** Warning: (vsim-PLI-3410) Illegal character 'M' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '(' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(15)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# Top-left pixel: xx
+# Bottom-right pixel: xx
+add wave -position end  sim:/bmp_read_test/bmp_data
+add wave -position end  sim:/bmp_read_test/HEADER_SIZE
+add wave -position end  sim:/bmp_read_test/HEIGHT
+add wave -position end  sim:/bmp_read_test/memory
+add wave -position end  sim:/bmp_read_test/WIDTH
+vlog ../bmp_read_test.sv
+# Questa Intel Starter FPGA Edition-64 vlog 2024.1 Compiler 2024.04 Apr 19 2024
+# Start time: 22:43:45 on Mar 26,2025
+# vlog -reportprogress 300 ../bmp_read_test.sv 
+# -- Compiling module bmp_read_test
+# 
+# Top level modules:
+# 	bmp_read_test
+# End time: 22:43:46 on Mar 26,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.bmp_read_test(fast)
+run -all
+# Top-left pixel: xx
+# Bottom-right pixel: xx
+vlog ../bmp_read_test.sv
+# Questa Intel Starter FPGA Edition-64 vlog 2024.1 Compiler 2024.04 Apr 19 2024
+# Start time: 22:44:36 on Mar 26,2025
+# vlog -reportprogress 300 ../bmp_read_test.sv 
+# -- Compiling module bmp_read_test
+# 
+# Top level modules:
+# 	bmp_read_test
+# End time: 22:44:36 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.bmp_read_test(fast)
+run -all
+# Top-left pixel: xx
+# Bottom-right pixel: xx
+vlog ../bmp_read_test.sv
+# Questa Intel Starter FPGA Edition-64 vlog 2024.1 Compiler 2024.04 Apr 19 2024
+# Start time: 22:44:59 on Mar 26,2025
+# vlog -reportprogress 300 ../bmp_read_test.sv 
+# -- Compiling module bmp_read_test
+# 
+# Top level modules:
+# 	bmp_read_test
+# End time: 22:44:59 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.bmp_read_test(fast)
+run -all
+# Top-left pixel: xx
+# Bottom-right pixel: xx
+vlog ../bmp_read_test.sv
+# Questa Intel Starter FPGA Edition-64 vlog 2024.1 Compiler 2024.04 Apr 19 2024
+# Start time: 22:46:35 on Mar 26,2025
+# vlog -reportprogress 300 ../bmp_read_test.sv 
+# -- Compiling module bmp_read_test
+# 
+# Top level modules:
+# 	bmp_read_test
+# End time: 22:46:35 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.bmp_read_test(fast)
+run -all
+# Top-left pixel: aa
+# Bottom-right pixel: 32
+add wave -position end  sim:/bmp_read_test/bmp_data
+add wave -position end  sim:/bmp_read_test/HEADER_SIZE
+add wave -position end  sim:/bmp_read_test/HEIGHT
+add wave -position end  sim:/bmp_read_test/memory
+add wave -position end  sim:/bmp_read_test/WIDTH
+add wave -position end  sim:/bmp_read_test/load_bmp/col
+add wave -position end  sim:/bmp_read_test/load_bmp/fd1
+add wave -position end  sim:/bmp_read_test/load_bmp/filename
+add wave -position end  sim:/bmp_read_test/load_bmp/i
+add wave -position end  sim:/bmp_read_test/load_bmp/row
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.bmp_read_test(fast)
+run -all
+# Top-left pixel: aa
+# Bottom-right pixel: 32
+vlog ../bmp_read_test.sv
+# Questa Intel Starter FPGA Edition-64 vlog 2024.1 Compiler 2024.04 Apr 19 2024
+# Start time: 22:53:44 on Mar 26,2025
+# vlog -reportprogress 300 ../bmp_read_test.sv 
+# -- Compiling module bmp_read_test
+# 
+# Top level modules:
+# 	bmp_read_test
+# End time: 22:53:45 on Mar 26,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.bmp_read_test(fast)
+run -all
+# ** Warning: (vsim-PLI-3410) Illegal character 'M' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '(' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# ** Warning: (vsim-PLI-3410) Illegal character '' in data on line 1 of file "../pattern_image_05af.bmp".    : ../bmp_read_test.sv(16)
+#    Time: 0 ns  Iteration: 0  Instance: /bmp_read_test
+# Top-left pixel: aa
+# Bottom-right pixel: 32
+add wave -position end  sim:/bmp_read_test/bmp_data
+vlog ../bmp_read_test.sv
+# Questa Intel Starter FPGA Edition-64 vlog 2024.1 Compiler 2024.04 Apr 19 2024
+# Start time: 23:02:22 on Mar 26,2025
+# vlog -reportprogress 300 ../bmp_read_test.sv 
+# -- Compiling module bmp_read_test
+# 
+# Top level modules:
+# 	bmp_read_test
+# End time: 23:02:23 on Mar 26,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.bmp_read_test(fast)
+# Warning in wave window restart: (vish-4014) No objects found matching '/bmp_read_test/load_bmp/fd1'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/bmp_read_test/bmp_data'. 
+run -all
+# BMP file ../pattern_image_05af.bmp loaded successfully!
+# Top-left pixel: 00
+# Bottom-right pixel: 3f
+vlog ../bmp_read_test.sv
+# Questa Intel Starter FPGA Edition-64 vlog 2024.1 Compiler 2024.04 Apr 19 2024
+# Start time: 23:03:29 on Mar 26,2025
+# vlog -reportprogress 300 ../bmp_read_test.sv 
+# -- Compiling module bmp_read_test
+# 
+# Top level modules:
+# 	bmp_read_test
+# End time: 23:03:30 on Mar 26,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.bmp_read_test(fast)
+run -all
+# BMP file ../pattern_image_05af.bmp loaded successfully!
+# Top-left pixel: 00
+# Bottom-right pixel: ff

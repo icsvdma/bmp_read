@@ -1,0 +1,69 @@
+m255
+K4
+z2
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+!s11f vlog 2024.1 2024.04, Apr 19 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/7seve/Documents/11_FPGAproj/modelsim/ov2640_sim/project
+T_opt
+!s110 1742997813
+VKe1h<Dd_CzSzKzh61_iAj2
+04 13 4 work bmp_read_test fast 0
+=11-a02942bb8550-67e40935-5d-7ddc
+R1
+!s12f OEM100
+!s12b OEM100
+!s124 OEM10U1 
+o-quiet -auto_acc_if_foreign -work work +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2024.1;79
+vbmp_read_test
+2../bmp_read_test.sv
+DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+!s110 1742997810
+!i10b 1
+!s100 J>m`hN=:mBE[=XZe?N@Qb0
+I=1_OeL]I3M?L9eJgB:;Q@0
+S1
+dC:/Users/7seve/Documents/11_FPGAproj/modelsim/bmp_read_250326/project
+w1742997803
+8../bmp_read_test.sv
+F../bmp_read_test.sv
+!i122 9
+L0 1 46
+VDg1SIo80bB@j0V0VzS_@n1
+OL;L;2024.1;79
+r1
+!s85 0
+31
+!s108 1742997809.000000
+!s107 ../bmp_read_test.sv|
+!s90 -reportprogress|300|../bmp_read_test.sv|
+!i113 0
+o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
