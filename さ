@@ -1,0 +1,135 @@
+SystemVerilog で BMP 画像を保存する task 関数
+
+出力した画像データを BMP フォーマットに従って左下から並べて保存する task を作成しました。
+
+
+---
+
+コード
+
+module bmp_writer;
+    parameter WIDTH  = 256;
+    parameter HEIGHT = 256;
+    parameter HEADER_SIZE = 54; // BMP ヘッダのサイズ
+
+    logic [7:0] memory [0:HEIGHT-1][0:WIDTH-1]; // 画像データ用メモリ
+
+    // BMP を保存するタスク
+    task automatic save_bmp(string filename);
+        integer file, i;
+        integer row, col;
+        logic [7:0] header [0:HEADER_SIZE-1];
+
+        // BMP ヘッダの作成
+        header = {
+            8'h42, 8'h4D,                      // "BM"
+            8'h36, 8'h28, 8'h00, 8'h00,        // ファイルサイズ (固定: 40 + 54 = 10294 バイト)
+            8'h00, 8'h00, 8'h00, 8'h00,        // 予約領域 (常に 0)
+            8'h36, 8'h00, 8'h00, 8'h00,        // ピクセルデータ開始位置 (54バイト)
+            8'h28, 8'h00, 8'h00, 8'h00,        // ヘッダサイズ (40バイト)
+            WIDTH[7:0], WIDTH[15:8], WIDTH[23:16], WIDTH[31:24],   // 画像幅
+            HEIGHT[7:0], HEIGHT[15:8], HEIGHT[23:16], HEIGHT[31:24], // 画像高さ
+            8'h01, 8'h00,                      // プレーン数 (1)
+            8'h08, 8'h00,                      // ビット深度 (8bpp)
+            8'h00, 8'h00, 8'h00, 8'h00,        // 圧縮形式 (なし)
+            8'h00, 8'h00, 8'h00, 8'h00,        // 画像サイズ (未指定)
+            8'h13, 8'h0B, 8'h00, 8'h00,        // 解像度 (2835ピクセル/m)
+            8'h13, 8'h0B, 8'h00, 8'h00,        // 解像度 (2835ピクセル/m)
+            8'h00, 8'h00, 8'h00, 8'h00,        // パレット数 (未使用)
+            8'h00, 8'h00, 8'h00, 8'h00         // 重要な色数 (なし)
+        };
+
+        file = $fopen(filename, "wb"); // バイナリモードで開く
+        if (file == 0) begin
+            $display("Error: Cannot open file %s", filename);
+            $finish;
+        end
+
+        // BMP ヘッダを書き込む
+        for (i = 0; i < HEADER_SIZE; i++) begin
+            $fwrite(file, "%c", header[i]);
+        end
+
+        // ピクセルデータを書き込む (左下から順番に)
+        for (row = HEIGHT-1; row >= 0; row--) begin
+            for (col = 0; col < WIDTH; col++) begin
+                $fwrite(file, "%c", memory[row][col]);
+            end
+        end
+
+        $fclose(file);
+        $display("BMP file %s saved successfully!", filename);
+    endtask
+
+    // 初期処理
+    initial begin
+        // メモリにダミーデータを格納 (テスト用)
+        integer x, y;
+        for (y = 0; y < HEIGHT; y++) begin
+            for (x = 0; x < WIDTH; x++) begin
+                memory[y][x] = (x + y) % 256; // グラデーションパターン
+            end
+        end
+
+        save_bmp("output.bmp"); // BMP ファイルを保存
+    end
+endmodule
+
+
+---
+
+ポイント
+
+1. BMP ヘッダを手動で作成
+
+必須情報 (ファイルサイズ、画像サイズ、ビット深度 8bpp など) を設定
+
+パレットなし (グレースケール) の単純な 8bpp BMP
+
+
+
+2. $fwrite(file, "%c", data) でバイナリデータを書き込む
+
+BMP はバイナリ形式なので、%c を使用
+
+
+
+3. **ピクセルデータを 左下から順に書き込む
+
+for (row = HEIGHT-1; row >= 0; row--) で 逆順に保存
+
+BMP フォーマットに従い 左下が最初になるように調整
+
+
+
+
+
+---
+
+動作確認
+
+1. memory[y][x] に適当なデータをセット ((x + y) % 256 でグラデーション)
+
+
+2. save_bmp("output.bmp") で BMP 画像を生成
+
+
+3. output.bmp を 画像ビューアで確認
+
+
+
+
+---
+
+次のステップ
+
+出力した 4 画素ずつのデータを正しくメモリに格納
+
+カラー (RGB) や異なるビット深度 (16bpp, 24bpp) に対応
+
+FPGA に実装してデータを実際に取り込む
+
+
+この方法で SystemVerilog だけで BMP 画像を保存できます！
+試してみて、うまくいかない場合は教えてください！
+
